@@ -1,2 +1,3 @@
-2026/09/28-21:57:20.989 30dc Creating DB C:\Project\JingDongSign\edge-debug-profile\Default\Site Characteristics Database since it was missing.
-2026/09/28-21:57:21.039 30dc Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\Site Characteristics Database/MANIFEST-000001
+2026/09/28-23:00:48.405 28b4 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\Site Characteristics Database/MANIFEST-000001
+2026/09/28-23:00:48.406 28b4 Recovering log #3
+2026/09/28-23:00:48.406 28b4 Reusing old log C:\Project\JingDongSign\edge-debug-profile\Default\Site Characteristics Database/000003.log 

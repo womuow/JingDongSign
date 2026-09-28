@@ -1,2 +1,3 @@
-2026/09/28-21:57:24.928 4b78 Creating DB C:\Project\JingDongSign\edge-debug-profile\Default\EdgeCoupons/coupons_data.db since it was missing.
-2026/09/28-21:57:25.019 4b78 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/09/28-23:00:54.764 35d8 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/09/28-23:00:54.770 35d8 Recovering log #3
+2026/09/28-23:00:54.777 35d8 Reusing old log C:\Project\JingDongSign\edge-debug-profile\Default\EdgeCoupons/coupons_data.db/000003.log 

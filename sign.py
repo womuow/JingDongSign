@@ -10,8 +10,7 @@
 
 2. 首次准备登录会话(只需一次):
     用本脚本使用的同一个 user-data-dir 启动 Edge,手动登录京东,然后关闭 Edge。
-    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" ^
-        --user-data-dir="C:\\Project\\JingDongSign\\edge-debug-profile"
+    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" --user-data-dir="C:\\Project\\JingDongSign\\edge-debug-profile"
     登录后关闭 Edge,登录会话(cookie)会保存到该 profile 中。
 
 3. 日常运行(全自动):

@@ -34,3 +34,48 @@
 2026-09-28 14:16:50.693: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-09-28 14:16:55.616: [INFO] VisibilityChanged: 0
 2026-09-28 14:17:11.128: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 14:56:45.491: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 14:56:45.491: [INFO] Profiles total count: 1
+2026-09-28 14:56:45.491: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T14:56:45.420Z
+2026-09-28 14:56:45.491: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 14:56:45.491: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T14:56:45.420Z
+2026-09-28 14:56:45.491: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 14:56:45.491: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 14:56:45.491: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 14:56:45.491: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 14:56:45.494: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 14:57:00.354: [INFO] VisibilityChanged: 0
+2026-09-28 14:58:13.372: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 14:58:49.870: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 14:58:49.870: [INFO] Profiles total count: 1
+2026-09-28 14:58:49.870: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T14:58:49.805Z
+2026-09-28 14:58:49.870: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 14:58:49.871: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T14:58:49.805Z
+2026-09-28 14:58:49.871: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 14:58:49.871: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 14:58:49.871: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 14:58:49.871: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 14:58:53.996: [INFO] VisibilityChanged: 0
+2026-09-28 14:59:35.479: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 15:00:48.772: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 15:00:48.772: [INFO] Profiles total count: 1
+2026-09-28 15:00:48.772: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T15:00:48.709Z
+2026-09-28 15:00:48.772: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 15:00:48.772: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T15:00:48.709Z
+2026-09-28 15:00:48.772: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 15:00:48.772: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 15:00:48.772: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 15:00:48.772: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 15:00:50.364: [INFO] VisibilityChanged: 0
+2026-09-28 15:01:11.833: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 15:12:28.855: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 15:12:28.855: [INFO] Profiles total count: 1
+2026-09-28 15:12:28.856: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T15:12:28.782Z
+2026-09-28 15:12:28.856: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 15:12:28.856: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T15:12:28.782Z
+2026-09-28 15:12:28.856: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 15:12:28.856: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 15:12:28.856: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 15:12:28.856: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 15:12:30.921: [INFO] VisibilityChanged: 0
+2026-09-28 15:12:52.553: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
