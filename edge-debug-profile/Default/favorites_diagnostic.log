@@ -1,0 +1,36 @@
+2026-09-28 13:57:21.530: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 13:57:21.530: [INFO] Profiles total count: 1
+2026-09-28 13:57:21.530: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T13:57:21.453Z
+2026-09-28 13:57:21.530: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 13:57:21.530: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T13:57:21.453Z
+2026-09-28 13:57:21.530: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 13:57:21.530: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 13:57:21.530: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 13:57:21.530: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 13:57:21.654: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 13:57:26.323: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 13:57:26.332: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-09-28 13:57:26.354: [INFO] Primary account changed.
+2026-09-28 13:57:26.354: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-09-28 13:57:26.389: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-09-28 13:57:29.363: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 13:57:29.365: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 13:57:29.366: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 13:57:29.408: [INFO] Primary account changed.
+2026-09-28 13:57:29.408: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kCleared
+2026-09-28 13:57:29.415: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-09-28 13:57:38.116: [INFO] VisibilityChanged: 0
+2026-09-28 13:57:54.781: [INFO] VisibilityChanged: 1
+2026-09-28 13:57:57.891: [INFO] VisibilityChanged: 0
+2026-09-28 14:16:42.602: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 14:16:50.693: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 14:16:50.693: [INFO] Profiles total count: 1
+2026-09-28 14:16:50.693: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T14:16:50.635Z
+2026-09-28 14:16:50.693: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-28 14:16:50.693: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-28T14:16:50.635Z
+2026-09-28 14:16:50.693: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 14:16:50.693: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 14:16:50.693: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 14:16:50.693: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 14:16:55.616: [INFO] VisibilityChanged: 0
+2026-09-28 14:17:11.128: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

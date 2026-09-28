@@ -1,0 +1,32 @@
+0:00:00 Microsoft.DataDeletionHelper.End_LocalStorage
+0:00:00 Microsoft.DataDeletionHelper.End_LocalStorage
+0:00:00 Microsoft.DataDeletionHelper.End_LocalStorage
+0:00:00 Microsoft.DataDeletionHelper.End_SessionStorage
+0:00:00 Microsoft.DataDeletionHelper.End_SessionStorage
+0:00:00 Microsoft.DataDeletionHelper.End_SessionStorage
+0:00:00 Microsoft.DataDeletionHelper.End_SessionStorage
+0:00:00 Microsoft.DataDeletionHelper.End_Cookies
+0:00:00 Microsoft.DataDeletionHelper.End_Cookies
+0:00:00 Microsoft.DataDeletionHelper.End_Cookies
+0:00:00 Microsoft.DataDeletionHelper.End_Cookies
+0:00:00 Microsoft.DataDeletionHelper.End_Cookies
+0:00:00 Tab1 FinishNav1
+0:00:01 Tab1 StartNav2 #renderer-script #auto_subframe
+0:00:01 Tab1 FinishNav2
+0:00:01 Tab1 PageLoad
+0:00:02 Tab1 StartNav3 #ntp #auto_bookmark
+0:00:02 Tab1 PageLoad #ntp
+0:00:02 Tab1 FinishNav3
+0:00:03 Tab1 StartNav4 #renderer-script #auto_subframe
+0:00:03 Tab1 FinishNav4
+0:00:03 Tab1 PageLoad
+0:00:05 Tab1 PageLoad #ntp
+0:00:05 Tab1 StartNav5 #typed
+0:00:05 Tab1 FinishNav5
+0:00:06 Tab1 StartNav6 #renderer-script #link
+0:00:06 Tab1 FinishNav6
+0:00:06 Tab1 StartNav7 #renderer-script #link
+0:00:06 Tab1 FinishNav7
+0:00:06 Tab1 PageLoad
+0:00:15 Widget Closed: StatusBubble
+0:00:20 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
