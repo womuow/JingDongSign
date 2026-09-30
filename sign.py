@@ -1,5 +1,5 @@
 """
-京东自动签到脚本
+京东自动签到脚本(Linux / Windows 通用)
 
 使用 Selenium 4.49 + Python 3.11,加载本地 Edge 用户数据目录(edge-debug-profile),
 复用已保存的京东登录会话实现【自动登录】,然后自动点击签到并读取获得的京豆个数。
@@ -10,20 +10,32 @@
 
 2. 首次准备登录会话(只需一次):
     用本脚本使用的同一个 user-data-dir 启动 Edge,手动登录京东,然后关闭 Edge。
-    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" --user-data-dir="C:\\Project\\JingDongSign\\edge-debug-profile"
+    - Linux(有桌面环境):
+        microsoft-edge --user-data-dir="$PWD/edge-debug-profile"
+      无显示器的服务器:先在有桌面的机器上完成登录,再把整个 edge-debug-profile
+      目录原样拷贝到服务器上本脚本同级目录即可(Edge 关闭后再拷贝)。
+    - Windows:
+        "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --user-data-dir="C:\Project\JingDongSign\edge-debug-profile"
     登录后关闭 Edge,登录会话(cookie)会保存到该 profile 中。
 
 3. 日常运行(全自动):
-    python sign.py
+    python3 sign.py        # 使用 edge-debug-profile
+    python3 sign.py 2      # 使用 edge-debug-profile2
     脚本会用该 profile 启动 Edge(自动登录)-> 签到 -> 读取京豆个数 -> 关闭浏览器。
+
+    Linux 定时任务示例(crontab -e,每天 08:05 签到):
+        5 8 * * * cd /path/to/JingDongSign && /usr/bin/python3 sign.py >> sign.log 2>&1
 
 注意:
 - 运行脚本时,不能有其他 Edge 实例正在使用同一个 user-data-dir,否则启动会失败。
 - 京东登录会话过期后需要重做第 2 步。
 - 默认 HEADLESS=True 后台(无头)运行,不弹出浏览器窗口;调试时可改为 False 观察页面。
+- Linux 下 Edge 不在标准路径时,可用环境变量指定浏览器位置:
+    JD_EDGE_BINARY=/opt/microsoft/msedge/msedge python3 sign.py
 """
 
 import os
+import shutil
 import sys
 import time
 from selenium import webdriver
@@ -33,8 +45,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # ===== 配置 =====
+# 脚本所在目录(跨平台:不再硬编码 Windows 路径,Windows/Linux 均以脚本位置为基准)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+IS_WINDOWS = sys.platform.startswith("win")
+IS_LINUX = sys.platform.startswith("linux")
+
 # Edge 用户数据目录(含已保存的京东登录会话)
-USER_DATA_DIR = r"C:\Project\JingDongSign\edge-debug-profile"
+USER_DATA_DIR = os.path.join(BASE_DIR, "edge-debug-profile")
 USER_DATA_DIR_PATH = ""
 PROFILE_DIR = "Default"
 
@@ -61,6 +79,33 @@ AUTO_CLOSE = True
 HEADLESS = True
 
 
+def find_edge_binary() -> str:
+    """定位 Edge 可执行文件。
+
+    - 优先读取环境变量 JD_EDGE_BINARY(强制指定);
+    - Windows:返回空串,使用系统默认 Edge(Selenium Manager 自动处理);
+    - Linux:按常见安装路径依次探测;均未命中时返回空串,交由 Selenium
+      Manager 报出更明确的错误。
+    """
+    env_bin = os.environ.get("JD_EDGE_BINARY", "")
+    if env_bin:
+        return env_bin
+    if not IS_LINUX:
+        return ""
+    candidates = [
+        "/usr/bin/microsoft-edge",
+        "/usr/bin/microsoft-edge-stable",
+        "/usr/bin/microsoft-edge-beta",
+        "/opt/microsoft/msedge/msedge",
+        shutil.which("microsoft-edge") or "",
+        shutil.which("microsoft-edge-stable") or "",
+    ]
+    for path in candidates:
+        if path and os.path.exists(path):
+            return path
+    return ""
+
+
 def launch_edge(profile: int = 0) -> webdriver.Edge:
     """用本地 user-data-dir 启动 Edge,复用已保存的登录会话(自动登录)。"""
     global USER_DATA_DIR_PATH
@@ -72,6 +117,9 @@ def launch_edge(profile: int = 0) -> webdriver.Edge:
         raise FileNotFoundError(f"Edge 用户数据目录不存在: {USER_DATA_DIR_PATH}")
 
     options = Options()
+    binary = find_edge_binary()
+    if binary:
+        options.binary_location = binary
     options.add_argument(f"--user-data-dir={USER_DATA_DIR_PATH}")
     options.add_argument(f"--profile-directory={PROFILE_DIR}")
     # 抑制首次启动向导
@@ -87,6 +135,13 @@ def launch_edge(profile: int = 0) -> webdriver.Edge:
         options.add_argument("--headless=new")
         # 无头模式默认窗口只有 800x600,显式指定尺寸,避免页面元素因视口过小而不可见/无法点击
         options.add_argument("--window-size=1920,1080")
+    if IS_LINUX:
+        # Linux 服务器(尤其 Docker / root 用户)下常见的兼容参数
+        options.add_argument("--no-sandbox")
+        # 容器内 /dev/shm 往往过小,改用 /tmp 存放共享内存,避免标签页崩溃
+        options.add_argument("--disable-dev-shm-usage")
+        # 服务器通常无 GPU,禁用以避免告警与初始化失败
+        options.add_argument("--disable-gpu")
 
     return webdriver.Edge(options=options)
 
@@ -205,7 +260,10 @@ def main(profile: int = 0) -> int:
         if not ensure_login(driver):
             print("[失败] 未登录或京东会话已过期。")
             print("请用同一 profile 手动登录一次京东,然后关闭 Edge 再运行本脚本:")
-            print(f'  msedge.exe --user-data-dir="{USER_DATA_DIR_PATH}"')
+            if IS_WINDOWS:
+                print(f'  msedge.exe --user-data-dir="{USER_DATA_DIR_PATH}"')
+            else:
+                print(f'  microsoft-edge --user-data-dir="{USER_DATA_DIR_PATH}"')
             return 1
         print(f"[成功] 已自动登录(当前页: {driver.current_url})")
 
@@ -232,5 +290,8 @@ def main(profile: int = 0) -> int:
 
 
 if __name__ == "__main__":
-    main()
-    main(2)
+    # 依次为两个 profile 签到(目录 edge-debug-profile / edge-debug-profile2)
+    rc1 = main()
+    rc2 = main(2)
+    # 任一 profile 失败则以非 0 退出,便于 cron / systemd 感知失败
+    sys.exit(rc1 or rc2)

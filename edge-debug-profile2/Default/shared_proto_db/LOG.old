@@ -1,3 +1,3 @@
-2026/09/30-18:23:14.520 ee8 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile2\Default\shared_proto_db/MANIFEST-000001
-2026/09/30-18:23:14.521 ee8 Recovering log #3
-2026/09/30-18:23:14.522 ee8 Reusing old log C:\Project\JingDongSign\edge-debug-profile2\Default\shared_proto_db/000003.log 
+2026/10/01-00:29:57.627 678f Reusing MANIFEST /home/mucui/JingDongSign/edge-debug-profile2/Default/shared_proto_db/MANIFEST-000001
+2026/10/01-00:29:57.627 678f Recovering log #3
+2026/10/01-00:29:57.628 678f Reusing old log /home/mucui/JingDongSign/edge-debug-profile2/Default/shared_proto_db/000003.log 

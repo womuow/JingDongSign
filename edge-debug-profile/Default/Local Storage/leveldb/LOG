@@ -1,5 +1,14 @@
-2026/09/30-18:41:12.366 4688 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\Local Storage\leveldb/MANIFEST-000001
-2026/09/30-18:41:12.368 4688 Recovering log #12
-2026/09/30-18:41:12.369 4688 Level-0 table #15: started
-2026/09/30-18:41:12.378 4688 Level-0 table #15: 19301 bytes OK
-2026/09/30-18:41:12.387 4688 Delete type=0 #12
+2026/10/01-00:30:10.445 68b5 Reusing MANIFEST /home/mucui/JingDongSign/edge-debug-profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/10/01-00:30:10.451 68b5 Recovering log #16
+2026/10/01-00:30:10.452 68b5 Level-0 table #18: started
+2026/10/01-00:30:10.464 68b5 Level-0 table #18: 59130 bytes OK
+2026/10/01-00:30:10.479 68b5 Delete type=0 #16
+2026/10/01-00:30:32.515 68bd Compacting 4@0 + 1@1 files
+2026/10/01-00:30:32.530 68bd Generated table #20@0: 92 keys, 105421 bytes
+2026/10/01-00:30:32.530 68bd Compacted 4@0 + 1@1 files => 105421 bytes
+2026/10/01-00:30:32.538 68bd compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/01-00:30:32.540 68bd Delete type=2 #7
+2026/10/01-00:30:32.540 68bd Delete type=2 #9
+2026/10/01-00:30:32.541 68bd Delete type=2 #13
+2026/10/01-00:30:32.541 68bd Delete type=2 #15
+2026/10/01-00:30:32.541 68bd Delete type=2 #18
