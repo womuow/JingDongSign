@@ -34,6 +34,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # ===== 配置 =====
 # Edge 用户数据目录(含已保存的京东登录会话)
 USER_DATA_DIR = r"C:\Project\JingDongSign\edge-debug-profile"
+USER_DATA_DIR_PATH = ""
 PROFILE_DIR = "Default"
 
 # 京东京豆签到页 / 登录页标识
@@ -56,13 +57,17 @@ SUCCESS_NUM_FALLBACK_XPATH = '//div[@class="num"]'
 AUTO_CLOSE = True
 
 
-def launch_edge() -> webdriver.Edge:
+def launch_edge(profile: int = 0) -> webdriver.Edge:
     """用本地 user-data-dir 启动 Edge,复用已保存的登录会话(自动登录)。"""
-    if not os.path.isdir(USER_DATA_DIR):
-        raise FileNotFoundError(f"Edge 用户数据目录不存在: {USER_DATA_DIR}")
+    if profile != 0:
+        USER_DATA_DIR_PATH = USER_DATA_DIR+f"{profile}"
+    else:
+        USER_DATA_DIR_PATH =USER_DATA_DIR
+    if not os.path.isdir(USER_DATA_DIR_PATH):
+        raise FileNotFoundError(f"Edge 用户数据目录不存在: {USER_DATA_DIR_PATH}")
 
     options = Options()
-    options.add_argument(f"--user-data-dir={USER_DATA_DIR}")
+    options.add_argument(f"--user-data-dir={USER_DATA_DIR_PATH}")
     options.add_argument(f"--profile-directory={PROFILE_DIR}")
     # 抑制首次启动向导
     options.add_argument("--no-first-run")
@@ -173,14 +178,14 @@ def read_sign_in_result(driver: webdriver.Edge, timeout: int = 15) -> dict:
     return {"success": True, "title": title_text, "beans": num_text}
 
 
-def main() -> int:
+def main(profile: int = 0) -> int:
     try:
         print("[信息] 启动 Edge(加载本地 profile)...")
-        driver = launch_edge()
+        driver = launch_edge(profile)
     except Exception as e:
         print(f"[错误] 启动 Edge 失败: {e}")
         print("请确认没有其他 Edge 实例正在使用该 user-data-dir:")
-        print(f"  {USER_DATA_DIR}")
+        print(f"  {USER_DATA_DIR_PATH}")
         return 1
 
     try:
@@ -189,7 +194,7 @@ def main() -> int:
         if not ensure_login(driver):
             print("[失败] 未登录或京东会话已过期。")
             print("请用同一 profile 手动登录一次京东,然后关闭 Edge 再运行本脚本:")
-            print(f'  msedge.exe --user-data-dir="{USER_DATA_DIR}"')
+            print(f'  msedge.exe --user-data-dir="{USER_DATA_DIR_PATH}"')
             return 1
         print(f"[成功] 已自动登录(当前页: {driver.current_url})")
 
@@ -216,4 +221,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
+    main(2)

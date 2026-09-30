@@ -79,3 +79,24 @@
 2026-09-28 15:12:28.856: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-09-28 15:12:30.921: [INFO] VisibilityChanged: 0
 2026-09-28 15:12:52.553: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-30 09:54:00.160: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-30 09:54:00.161: [INFO] Profiles total count: 1
+2026-09-30 09:54:00.161: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-30T09:54:00.078Z
+2026-09-30 09:54:00.161: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-30 09:54:00.161: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-30T09:54:00.078Z
+2026-09-30 09:54:00.161: [INFO] OnDoneLoading sync enabled: 0
+2026-09-30 09:54:00.161: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-30 09:54:00.161: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-30 09:54:00.161: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-30 09:54:05.027: [INFO] VisibilityChanged: 0
+2026-09-30 10:41:12.601: [INFO] CurrentProfilePath: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-30 10:41:12.601: [INFO] Profiles total count: 1
+2026-09-30 10:41:12.601: [INFO] Profile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-30T10:41:12.529Z
+2026-09-30 10:41:12.601: [INFO] LastUsedProfileDir: C:\Project\JingDongSign\edge-debug-profile\Default
+2026-09-30 10:41:12.601: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=C:\Project\JingDongSign\edge-debug-profile\Default lastActive=2026-09-30T10:41:12.529Z
+2026-09-30 10:41:12.601: [INFO] OnDoneLoading sync enabled: 0
+2026-09-30 10:41:12.601: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-30 10:41:12.601: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-30 10:41:12.601: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-30 10:41:18.774: [INFO] VisibilityChanged: 0
+2026-09-30 10:41:40.462: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

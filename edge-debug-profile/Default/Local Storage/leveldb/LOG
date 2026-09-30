@@ -1,3 +1,5 @@
-2026/09/28-23:12:28.631 3934 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\Local Storage\leveldb/MANIFEST-000001
-2026/09/28-23:12:28.633 3934 Recovering log #12
-2026/09/28-23:12:28.637 3934 Reusing old log C:\Project\JingDongSign\edge-debug-profile\Default\Local Storage\leveldb/000012.log 
+2026/09/30-18:41:12.366 4688 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/09/30-18:41:12.368 4688 Recovering log #12
+2026/09/30-18:41:12.369 4688 Level-0 table #15: started
+2026/09/30-18:41:12.378 4688 Level-0 table #15: 19301 bytes OK
+2026/09/30-18:41:12.387 4688 Delete type=0 #12
