@@ -20,6 +20,7 @@
 注意:
 - 运行脚本时,不能有其他 Edge 实例正在使用同一个 user-data-dir,否则启动会失败。
 - 京东登录会话过期后需要重做第 2 步。
+- 默认 HEADLESS=True 后台(无头)运行,不弹出浏览器窗口;调试时可改为 False 观察页面。
 """
 
 import os
@@ -56,9 +57,13 @@ SUCCESS_NUM_FALLBACK_XPATH = '//div[@class="num"]'
 # 签到结束后是否自动关闭浏览器(True=自动关闭,便于定时任务;False=保留,便于查看)
 AUTO_CLOSE = True
 
+# 是否后台(无头)运行 Edge(True=不弹出浏览器窗口,适合定时任务;False=弹出窗口,便于调试)
+HEADLESS = True
+
 
 def launch_edge(profile: int = 0) -> webdriver.Edge:
     """用本地 user-data-dir 启动 Edge,复用已保存的登录会话(自动登录)。"""
+    global USER_DATA_DIR_PATH
     if profile != 0:
         USER_DATA_DIR_PATH = USER_DATA_DIR+f"{profile}"
     else:
@@ -76,6 +81,12 @@ def launch_edge(profile: int = 0) -> webdriver.Edge:
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
+    # 后台(无头)运行,不弹出浏览器窗口
+    if HEADLESS:
+        # 新版无头模式(Edge 112+),渲染行为与有头浏览器基本一致
+        options.add_argument("--headless=new")
+        # 无头模式默认窗口只有 800x600,显式指定尺寸,避免页面元素因视口过小而不可见/无法点击
+        options.add_argument("--window-size=1920,1080")
 
     return webdriver.Edge(options=options)
 
