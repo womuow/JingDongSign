@@ -44,6 +44,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from SendMail import send_mail
+
+
+theme = "JingDong签到"
+Tomail = "womuow@139.com"  
+
+
 # ===== 配置 =====
 # 脚本所在目录(跨平台:不再硬编码 Windows 路径,Windows/Linux 均以脚本位置为基准)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -279,6 +286,12 @@ def main(profile: int = 0) -> int:
         print(f"提示  : {result.get('title') or '无'}")
         beans = result.get("beans")
         print(f"京豆  : {beans if beans is not None else '未知'}")
+
+        if beans is not None:
+            send_mail(theme, f"本次签到获得京豆: {beans} 个","",Tomail)
+        else:
+            send_mail(theme, "本次签到失败","",Tomail)
+        
 
         # 留 2 秒便于肉眼确认
         time.sleep(2)
