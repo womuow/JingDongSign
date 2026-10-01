@@ -100,3 +100,26 @@
 2026-09-30 10:41:12.601: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-09-30 10:41:18.774: [INFO] VisibilityChanged: 0
 2026-09-30 10:41:40.462: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-01 03:04:07.601: [INFO] CurrentProfilePath: /home/mucui/JingDongSign/edge-debug-profile/Default
+2026-10-01 03:04:07.601: [INFO] Profiles total count: 1
+2026-10-01 03:04:07.602: [INFO] Profile: name=用户配置 1 path=/home/mucui/JingDongSign/edge-debug-profile/Default lastActive=2026-10-01T03:04:07.500Z
+2026-10-01 03:04:07.602: [INFO] LastUsedProfileDir: /home/mucui/JingDongSign/edge-debug-profile/Default
+2026-10-01 03:04:07.602: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=/home/mucui/JingDongSign/edge-debug-profile/Default lastActive=2026-10-01T03:04:07.500Z
+2026-10-01 03:04:07.602: [INFO] OnDoneLoading sync enabled: 0
+2026-10-01 03:04:07.602: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-01 03:04:07.602: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-01 03:04:07.602: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-01 03:04:08.041: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-01 03:04:50.911: [INFO] VisibilityChanged: 0
+2026-10-01 03:05:35.976: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-01 03:09:55.042: [INFO] CurrentProfilePath: /home/mucui/JingDongSign/edge-debug-profile/Default
+2026-10-01 03:09:55.042: [INFO] Profiles total count: 1
+2026-10-01 03:09:55.042: [INFO] Profile: name=用户配置 1 path=/home/mucui/JingDongSign/edge-debug-profile/Default lastActive=2026-10-01T03:09:55.019Z
+2026-10-01 03:09:55.042: [INFO] LastUsedProfileDir: /home/mucui/JingDongSign/edge-debug-profile/Default
+2026-10-01 03:09:55.043: [INFO] MostRecentlyActiveProfile: name=用户配置 1 path=/home/mucui/JingDongSign/edge-debug-profile/Default lastActive=2026-10-01T03:09:55.019Z
+2026-10-01 03:09:55.043: [INFO] OnDoneLoading sync enabled: 0
+2026-10-01 03:09:55.043: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-01 03:09:55.043: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-01 03:09:55.043: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-01 03:09:56.893: [INFO] VisibilityChanged: 0
+2026-10-01 03:10:19.214: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

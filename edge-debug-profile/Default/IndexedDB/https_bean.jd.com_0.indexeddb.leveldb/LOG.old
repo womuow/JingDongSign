@@ -1,3 +1,3 @@
-2026/09/30-17:54:08.485 1ca0 Reusing MANIFEST C:\Project\JingDongSign\edge-debug-profile\Default\IndexedDB\https_bean.jd.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/09/30-17:54:08.486 1ca0 Recovering log #3
-2026/09/30-17:54:08.487 1ca0 Reusing old log C:\Project\JingDongSign\edge-debug-profile\Default\IndexedDB\https_bean.jd.com_0.indexeddb.leveldb/000003.log 
+2026/10/01-11:07:41.575 173f Reusing MANIFEST /home/mucui/JingDongSign/edge-debug-profile/Default/IndexedDB/https_bean.jd.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/01-11:07:41.575 173f Recovering log #3
+2026/10/01-11:07:41.576 173f Reusing old log /home/mucui/JingDongSign/edge-debug-profile/Default/IndexedDB/https_bean.jd.com_0.indexeddb.leveldb/000003.log 

@@ -1,3 +1,3 @@
-2026/10/01-00:30:43.605 6984 Reusing MANIFEST /home/mucui/JingDongSign/edge-debug-profile2/Default/Local Storage/leveldb/MANIFEST-000001
-2026/10/01-00:30:43.612 6984 Recovering log #8
-2026/10/01-00:30:43.613 6984 Reusing old log /home/mucui/JingDongSign/edge-debug-profile2/Default/Local Storage/leveldb/000008.log 
+2026/10/01-11:10:20.189 1da3 Reusing MANIFEST /home/mucui/JingDongSign/edge-debug-profile2/Default/Local Storage/leveldb/MANIFEST-000001
+2026/10/01-11:10:20.194 1da3 Recovering log #10
+2026/10/01-11:10:20.198 1da3 Reusing old log /home/mucui/JingDongSign/edge-debug-profile2/Default/Local Storage/leveldb/000010.log 
